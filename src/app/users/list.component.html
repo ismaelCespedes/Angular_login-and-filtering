@@ -1,0 +1,9 @@
+<h1>All bookings for {{referenceEmail}}</h1>
+
+<div class="card-body position-relative">
+    <div class="ag-theme-balham" style="height:550px;">
+        <app-ag-grid *ngIf="AgLoad" [ColumnDefs]="this.ColumnDefs" [RowData]="this.RowData"
+                     [IsColumnsToFit]="true">
+        </app-ag-grid>
+    </div>
+</div>
